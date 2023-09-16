@@ -1,0 +1,51 @@
+.adjust1{
+    width: calc(100vw - 16rem)
+}
+.adjust2{
+    width: calc(100vw - 8rem);
+}
+
+.home-container{
+    color: white;
+    height: 20rem;
+}
+
+.home-content h1{
+    padding: 0.6rem;
+    padding-top: 3rem;
+}
+.home-content h2{
+    color: yellow;
+    /* padding: 0.6rem; */
+    padding-left: 0.6rem;
+}
+
+.home-buttons{
+    padding-left: 0.6rem;
+    margin-top: 2rem;
+}
+
+.home-buttons .btn-hire{
+    background-color: #3b8ff3;
+    color: white;
+    width: 8rem;
+    margin-top: 0.6rem;
+}
+.home-buttons .btn-hire:hover{
+    background-color: wheat;
+    color: black;
+    font-weight: bold;
+    width: 8.4rem;
+    transition: 1s;
+}
+
+.home-buttons .btn-cv{
+    background-color: #f29f67;
+    color: white;
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+}
+.home-buttons .btn-cv:hover{
+    opacity: 90%;
+    /* color: black; */
+}
