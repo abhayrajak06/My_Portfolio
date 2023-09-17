@@ -1,0 +1,14 @@
+.adjust1{
+    width: calc(100vw - 16rem)
+}
+.adjust2{
+    width: calc(100vw - 8rem);
+}
+
+.about-pic img{
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 5px black;
+    margin: 3rem auto;
+
+}

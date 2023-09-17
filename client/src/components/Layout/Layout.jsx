@@ -3,6 +3,7 @@ import Home from "../../pages/Home/Home";
 import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
 import "./Layout.css";
 import Menu from "../Menu/Menu";
+import About from "../../pages/About/About";
 
 const Layout = () => {
   const [toggle, setToggle] = useState(true);
@@ -27,8 +28,15 @@ const Layout = () => {
           </div>
           <Menu toggle={toggle} />
         </div>
-        <div className="">
-          <Home toggle={toggle} />
+        <div className="info-section">
+          <div
+            className={
+              toggle ? "info-section-toggle" : "info-section-not-toggle"
+            }
+          >
+            <Home toggle={toggle} />
+            <About toggle={toggle} />
+          </div>
         </div>
       </div>
     </>

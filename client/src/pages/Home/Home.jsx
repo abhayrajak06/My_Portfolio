@@ -14,8 +14,8 @@ const Home = ({ toggle }) => {
         }
       >
         <div className="container home-content">
-          <h1>Hi I'm a .....</h1>
-          <h2>
+          <h2>Hi I'm a .....</h2>
+          <h1>
             <Typewriter
               options={{
                 strings: [
@@ -27,7 +27,7 @@ const Home = ({ toggle }) => {
                 loop: true,
               }}
             />
-          </h2>
+          </h1>
           <div className="home-buttons">
             <button className="btn btn-hire">Hire Me</button>
             <a
