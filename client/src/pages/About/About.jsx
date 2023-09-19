@@ -4,7 +4,7 @@ import "./About.css";
 const About = ({ toggle }) => {
   return (
     <>
-      <div className={toggle ? "about adjust1" : "about adjust2"}>
+      <div className={toggle ? "about adjust1 w-100" : "about adjust2 w-100"}>
         <div className="container">
           <div className="row">
             <div className="col-md-6 about-pic">

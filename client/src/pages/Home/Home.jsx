@@ -9,8 +9,8 @@ const Home = ({ toggle }) => {
       <div
         className={
           toggle
-            ? "home-container bg-dark adjust1"
-            : "home-container bg-dark adjust2"
+            ? "home-container bg-dark adjust1 w-100"
+            : "home-container bg-dark adjust2 w-100"
         }
       >
         <div className="container home-content">
