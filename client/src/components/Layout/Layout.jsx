@@ -2,10 +2,11 @@ import React from "react";
 import Menu from "../Menu/Menu";
 import Home from "../../pages/Home/Home";
 import About from "../../pages/About/About";
+import Techstack from "../../pages/Techstack/Techstack";
 
 const Layout = () => {
   return (
-    <div className="container-fluid bg-warning">
+    <div className="container-fluid">
       <div className="row">
         <div
           className="col-md-2 col-sm-2 col-3"
@@ -28,8 +29,8 @@ const Layout = () => {
           <div className="">
             <About />
           </div>
-          <div className="bg-secondary" style={{ height: "12rem" }}>
-            hello
+          <div className="">
+            <Techstack />
           </div>
           <div className="bg-success" style={{ height: "12rem" }}>
             hello

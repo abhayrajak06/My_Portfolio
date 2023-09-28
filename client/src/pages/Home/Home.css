@@ -31,6 +31,7 @@
     color: white;
     width: 8rem;
     margin-top: 0.6rem;
+    margin-right: 1rem;
 }
 .home-buttons .btn-hire:hover{
     background-color: wheat;
@@ -43,7 +44,7 @@
 .home-buttons .btn-cv{
     background-color: #f29f67;
     color: white;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     margin-top: 0.6rem;
 }
 .home-buttons .btn-cv:hover{

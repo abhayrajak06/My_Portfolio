@@ -6,7 +6,13 @@ const About = ({ toggle }) => {
     <>
       <div className={toggle ? "about adjust1 w-100" : "about adjust2 w-100"}>
         <div className="container">
-          <div className="row">
+          <div
+            className="row"
+            style={{
+              borderRadius: "1rem",
+              boxShadow: "2px 2px 2px rgba(0, 0, 0, 0.35)",
+            }}
+          >
             <div className="col-md-6 about-pic">
               <img
                 src="https://kalingatv.com/wp-content/uploads/2017/04/Virat-Kohli-RCB.jpg"
