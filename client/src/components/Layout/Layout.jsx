@@ -3,6 +3,7 @@ import Menu from "../Menu/Menu";
 import Home from "../../pages/Home/Home";
 import About from "../../pages/About/About";
 import Techstack from "../../pages/Techstack/Techstack";
+import Projects from "../../pages/Projects/Projects";
 
 const Layout = () => {
   return (
@@ -32,8 +33,8 @@ const Layout = () => {
           <div className="">
             <Techstack />
           </div>
-          <div className="bg-success" style={{ height: "12rem" }}>
-            hello
+          <div className="">
+            <Projects />
           </div>
           <div className="bg-danger" style={{ height: "12rem" }}>
             hello
