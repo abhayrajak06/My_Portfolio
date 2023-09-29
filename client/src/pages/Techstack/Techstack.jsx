@@ -33,7 +33,7 @@ const Techstack = () => {
             >
               {TechstackList.map((tech) => (
                 <div key={tech._id} className="col-md-3">
-                  <div className="card m-2 stackCard">
+                  <div className="card m-2 stack-card" id="skills">
                     <div className="card-content">
                       <div className="card-body">
                         <div className="media d-flex justify-content-center">
