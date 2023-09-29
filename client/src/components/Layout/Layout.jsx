@@ -4,6 +4,8 @@ import Home from "../../pages/Home/Home";
 import About from "../../pages/About/About";
 import Techstack from "../../pages/Techstack/Techstack";
 import Projects from "../../pages/Projects/Projects";
+import Education from "../../pages/Education/Education";
+import WorkExp from "../../pages/WorkExp/WorkExp";
 
 const Layout = () => {
   return (
@@ -31,10 +33,16 @@ const Layout = () => {
             <About />
           </div>
           <div className="">
+            <Education />
+          </div>
+          <div className="">
             <Techstack />
           </div>
           <div className="">
             <Projects />
+          </div>
+          <div className="">
+            <WorkExp />
           </div>
           <div className="bg-danger" style={{ height: "12rem" }}>
             hello

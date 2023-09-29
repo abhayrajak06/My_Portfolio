@@ -8,7 +8,6 @@ import {
   FcPortraitMode,
   FcReadingEbook,
   FcVideoProjector,
-  FcVoicePresentation,
 } from "react-icons/fc";
 
 const Menu = () => {
@@ -31,24 +30,20 @@ const Menu = () => {
             About
           </div>
           <div className="nav-link">
-            <FcPortraitMode />
-            Work Experience
+            <FcReadingEbook />
+            Education
           </div>
           <div className="nav-link">
             <FcBiotech />
             Tech Stack
           </div>
           <div className="nav-link">
-            <FcReadingEbook />
-            Education
-          </div>
-          <div className="nav-link">
             <FcVideoProjector />
             Projects
           </div>
           <div className="nav-link">
-            <FcVoicePresentation />
-            Testimonial
+            <FcPortraitMode />
+            Work Experience
           </div>
           <div className="nav-link">
             <FcBusinessContact />
