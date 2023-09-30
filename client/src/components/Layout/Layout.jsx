@@ -6,8 +6,10 @@ import Techstack from "../../pages/Techstack/Techstack";
 import Projects from "../../pages/Projects/Projects";
 import Education from "../../pages/Education/Education";
 import WorkExp from "../../pages/WorkExp/WorkExp";
+import Contact from "../../pages/Contact/Contact";
 
 const Layout = () => {
+  const year = new Date().getFullYear();
   return (
     <div className="container-fluid">
       <div className="row">
@@ -38,26 +40,18 @@ const Layout = () => {
           <div className="">
             <Techstack />
           </div>
+          <hr />
           <div className="">
             <Projects />
           </div>
           <div className="">
             <WorkExp />
           </div>
-          <div className="bg-danger" style={{ height: "12rem" }}>
-            hello
+          <div className="">
+            <Contact />
           </div>
-          <div className="bg-secondary" style={{ height: "12rem" }}>
-            hello
-          </div>
-          <div className="bg-success" style={{ height: "12rem" }}>
-            hello
-          </div>
-          <div className="bg-danger" style={{ height: "12rem" }}>
-            hello
-          </div>
-          <div className="bg-secondary" style={{ height: "12rem" }}>
-            hello
+          <div className="footer mb-3 mt-2 p-2">
+            <h4 className="text-center">Made with 💖 Abhay &copy;{year}</h4>
           </div>
         </div>
       </div>

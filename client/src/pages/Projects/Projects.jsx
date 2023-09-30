@@ -22,7 +22,11 @@ const Projects = () => {
         <div className="row m-1">
           <div className="col-md-12 d-flex flex-wrap gap-5 m-2 mt-3 justify-content-center">
             {projectList.map((p) => (
-              <div key={p.id} className="card" style={{ width: "18rem" }}>
+              <div
+                key={p.id}
+                className="card p-card"
+                style={{ width: "18rem" }}
+              >
                 <img src={p.image} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">{p.name}</h5>
