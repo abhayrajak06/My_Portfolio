@@ -3,16 +3,10 @@ import "./Home.css";
 import Typewriter from "typewriter-effect";
 import Resume from "../../components/assets/docs/gk-2500.pdf";
 
-const Home = ({ toggle }) => {
+const Home = () => {
   return (
     <>
-      <div
-        className={
-          toggle
-            ? "home-container bg-dark adjust1 w-100"
-            : "home-container bg-dark adjust2 w-100"
-        }
-      >
+      <div className="home-container bg-dark">
         <div className="container home-content">
           <h2>Hi I'm a .....</h2>
           <h1>

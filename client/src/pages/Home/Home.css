@@ -1,10 +1,3 @@
-.adjust1{
-    width: calc(100vw - 16rem)
-}
-.adjust2{
-    width: calc(100vw - 8rem);
-}
-
 .home-container{
     color: white;
     height: 20rem;

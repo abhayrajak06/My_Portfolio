@@ -28,26 +28,26 @@ const Layout = () => {
           className="col-sm-10 col-md-10 col-9 p-0"
           style={{ display: "flex", flexDirection: "column" }}
         >
-          <div className="">
+          <div className="" id="home">
             <Home />
           </div>
-          <div className="">
+          <div className="" id="about">
             <About />
           </div>
-          <div className="">
+          <div className="" id="education">
             <Education />
           </div>
-          <div className="">
+          <div className="" id="techstack">
             <Techstack />
           </div>
           <hr />
-          <div className="">
+          <div className="" id="projects">
             <Projects />
           </div>
-          <div className="">
+          <div className="" id="workexp">
             <WorkExp />
           </div>
-          <div className="">
+          <div className="" id="contact">
             <Contact />
           </div>
           <div className="footer mb-3 mt-2 p-2">

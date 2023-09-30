@@ -1,10 +1,10 @@
 import React from "react";
 import "./About.css";
 
-const About = ({ toggle }) => {
+const About = () => {
   return (
     <>
-      <div className={toggle ? "about adjust1 w-100" : "about adjust2 w-100"}>
+      <div className="about">
         <div className="container">
           <div
             className="row"
