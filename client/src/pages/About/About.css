@@ -49,3 +49,11 @@
     padding: 2rem;
     padding-top: 0;
 }
+
+#dark .about{
+    background-color: rgb(112, 112, 112);
+    color: whitesmoke;
+}
+#dark .about h1{
+    color: whitesmoke;
+}

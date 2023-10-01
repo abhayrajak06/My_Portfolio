@@ -83,3 +83,7 @@ img{
     background-color: #000;
     color: white;
   }
+
+  #dark .contact-section{
+    filter: brightness(85%);
+  }

@@ -6,10 +6,12 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { useTheme } from "../../context/ThemeContext";
 
 const Education = () => {
+  const [theme] = useTheme();
   return (
-    <div className="education" id="edu">
+    <div className="education edu" id={theme}>
       <div className="container">
         <div className="row">
           <div className="col-md-12 mb-4">
@@ -22,7 +24,7 @@ const Education = () => {
 
             <VerticalTimeline lineColor="#1e1e2c">
               <VerticalTimelineElement
-                className="vertical-timeline-element--work"
+                className="vertical-timeline-element--work edu-card"
                 contentStyle={{ background: "white", color: "black" }}
                 contentArrowStyle={{ borderRight: "7px solid  white" }}
                 date="2019 - 2023"
@@ -38,7 +40,7 @@ const Education = () => {
                 <p>Computer Science and Engineering : 8.8 CGPA</p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
-                className="vertical-timeline-element--work"
+                className="vertical-timeline-element--work edu-card"
                 contentStyle={{ background: "white", color: "black" }}
                 contentArrowStyle={{ borderRight: "7px solid  white" }}
                 date="2017 - 2019"

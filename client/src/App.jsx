@@ -1,10 +1,14 @@
 import Layout from "./components/Layout/Layout";
 import ScrollToTop from "react-scroll-to-top";
+import { useTheme } from "./context/ThemeContext";
 
 function App() {
+  const [theme] = useTheme();
   return (
     <>
-      <Layout />
+      <div id={theme}>
+        <Layout />
+      </div>
       <ScrollToTop
         smooth
         color="#e89b17"

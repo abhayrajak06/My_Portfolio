@@ -1,10 +1,12 @@
 import React from "react";
 import "./About.css";
+import { useTheme } from "../../context/ThemeContext";
 
 const About = () => {
+  const [theme] = useTheme();
   return (
     <>
-      <div className="about">
+      <div className="about" id={theme}>
         <div className="container">
           <div
             className="row"
