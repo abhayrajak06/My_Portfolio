@@ -7,6 +7,7 @@ import Projects from "../../pages/Projects/Projects";
 import Education from "../../pages/Education/Education";
 import WorkExp from "../../pages/WorkExp/WorkExp";
 import Contact from "../../pages/Contact/Contact";
+import Jello from "react-reveal/Jello";
 
 const Layout = () => {
   const year = new Date().getFullYear();
@@ -50,9 +51,11 @@ const Layout = () => {
           <div className="" id="contact">
             <Contact />
           </div>
-          <div className="footer mb-3 mt-2 p-2">
-            <h4 className="text-center">Made with 💖 Abhay &copy;{year}</h4>
-          </div>
+          <Jello>
+            <div className="footer mb-3 mt-2 p-2">
+              <h4 className="text-center">Made with 💖 Abhay &copy;{year}</h4>
+            </div>
+          </Jello>
         </div>
       </div>
     </div>

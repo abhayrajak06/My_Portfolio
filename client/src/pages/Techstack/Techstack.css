@@ -23,9 +23,10 @@
 }
 
 #dark .techstack{
-    background-color: rgba(211, 223, 211, 0.396);
+    /* background-color: rgba(211, 223, 211, 0.396); */
+    filter: brightness(85%);
 }
 
 #dark .techstack .stack-card{
-    filter: brightness(75%);
+    filter: brightness(80%);
 }

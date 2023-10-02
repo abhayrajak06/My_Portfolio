@@ -4,6 +4,7 @@ import Typewriter from "typewriter-effect";
 import Resume from "../../components/assets/docs/gk-2500.pdf";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { useTheme } from "../../context/ThemeContext";
+import Fade from "react-reveal/Fade";
 
 const Home = () => {
   const [theme, setTheme] = useTheme();
@@ -22,31 +23,36 @@ const Home = () => {
             <BsFillSunFill size={30} />
           )}
         </div>
+
         <div className="container home-content">
-          <h2>Hi I'm a .....</h2>
-          <h1>
-            <Typewriter
-              options={{
-                strings: [
-                  "Web Developer!",
-                  "React JS Developer!",
-                  "MERN stack Developer!",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h1>
-          <div className="home-buttons">
-            <button className="btn btn-hire">Hire Me</button>
-            <a
-              href={Resume}
-              download={"Abhay_Rajak.pdf"}
-              className="btn btn-cv"
-            >
-              My Resume
-            </a>
-          </div>
+          <Fade right>
+            <h2>Hi I'm a .....</h2>
+            <h1>
+              <Typewriter
+                options={{
+                  strings: [
+                    "Web Developer!",
+                    "React JS Developer!",
+                    "MERN stack Developer!",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h1>
+          </Fade>
+          <Fade bottom>
+            <div className="home-buttons">
+              <button className="btn btn-hire">Hire Me</button>
+              <a
+                href={Resume}
+                download={"Abhay_Rajak.pdf"}
+                className="btn btn-cv"
+              >
+                My Resume
+              </a>
+            </div>
+          </Fade>
         </div>
       </div>
     </>

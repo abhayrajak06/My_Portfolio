@@ -37,3 +37,16 @@
     padding-left: 6px;
     text-decoration: none;
 }
+
+@media screen and (max-width:635px) {
+    .nav-items{
+        padding: 4rem 0.4rem;
+        font-size: 2rem;
+    }
+    .nav-item{
+        font-size: 0.6rem;
+    }
+    .nav-link svg{
+        margin-right: 0.4rem;
+    }
+}
