@@ -8,6 +8,7 @@ import Education from "../../pages/Education/Education";
 import WorkExp from "../../pages/WorkExp/WorkExp";
 import Contact from "../../pages/Contact/Contact";
 import Jello from "react-reveal/Jello";
+import Footer from "../../pages/Footer/Footer";
 
 const Layout = () => {
   const year = new Date().getFullYear();
@@ -26,7 +27,7 @@ const Layout = () => {
           <Menu />
         </div>
         <div
-          className="col-sm-10 col-md-10 col-9 p-0"
+          className="col-sm-10  col-md-10 col-9 p-0"
           style={{ display: "flex", flexDirection: "column" }}
         >
           <div className="" id="home">
@@ -41,21 +42,17 @@ const Layout = () => {
           <div className="" id="techstack">
             <Techstack />
           </div>
-          <hr />
+          {/* <hr /> */}
           <div className="" id="projects">
             <Projects />
           </div>
           <div className="" id="workexp">
             <WorkExp />
           </div>
-          <div className="" id="contact">
+          <div className="" id="contact" style={{ height: "110vh" }}>
             <Contact />
+            <Footer />
           </div>
-          <Jello>
-            <div className="footer mb-3 mt-2 p-2">
-              <h4 className="text-center">Made with 💖 Abhay &copy;{year}</h4>
-            </div>
-          </Jello>
         </div>
       </div>
     </div>

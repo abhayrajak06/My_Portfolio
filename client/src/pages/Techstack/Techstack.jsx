@@ -4,6 +4,7 @@ import { TechstackList } from "../../utils/TechStackList";
 import { useTheme } from "../../context/ThemeContext";
 import RubberBand from "react-reveal/RubberBand";
 import Swing from "react-reveal/Swing";
+import Fade from "react-reveal/Fade";
 
 const Techstack = () => {
   const [theme] = useTheme();
@@ -33,10 +34,10 @@ const Techstack = () => {
             </div>
             <div className="row">
               <div
-                className="col-md-12  d-flex
+                className="col-md-12 mb-5 d-flex
             flex-wrap"
               >
-                <Swing>
+                <Fade right>
                   {TechstackList.map((tech) => (
                     <div key={tech._id} className="col-md-3">
                       <div className="card m-2 stack-card" id="skills">
@@ -58,7 +59,7 @@ const Techstack = () => {
                       </div>
                     </div>
                   ))}
-                </Swing>
+                </Fade>
               </div>
             </div>
           </div>

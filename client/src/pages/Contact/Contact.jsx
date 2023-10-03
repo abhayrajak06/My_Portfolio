@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div id={theme}>
       <div className="contact">
-        <div className="container mb-2 mt-2">
+        <div className="container mt-2" style={{ marginBottom: "8rem" }}>
           <div
             className="row contact-section"
             style={{
@@ -18,7 +18,7 @@ const Contact = () => {
             }}
           >
             <div
-              className="col-md-6 d-flex flex-wrap justify-content-center align-items-center"
+              className="col-md-6 d-flex flex-wrap justify-content-center align-items-center mb-1"
               style={{ borderRight: "0.01px solid rgba(0,0,0,0.15)" }}
             >
               <div className="img" style={{ padding: "0.2rem" }}>

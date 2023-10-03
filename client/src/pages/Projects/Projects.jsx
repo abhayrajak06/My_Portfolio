@@ -25,7 +25,7 @@ const Projects = () => {
               </div>
             </div>
             <div className="row m-1">
-              <div className="col-md-12 d-flex flex-wrap gap-5 m-2 mt-3 justify-content-center">
+              <div className="col-md-12 d-flex flex-wrap gap-5 m-2 mt-3 justify-content-center mb-5">
                 {projectList.map((p) => (
                   <div
                     key={p.id}

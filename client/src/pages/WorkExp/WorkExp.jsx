@@ -6,10 +6,12 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { AiFillHtml5 } from "react-icons/ai";
+import { useTheme } from "../../context/ThemeContext";
 
 const WorkExp = () => {
+  const [theme] = useTheme();
   return (
-    <div className="workexp">
+    <div className="workexp" id={theme}>
       <div className="container">
         <div className="row">
           <div className="col-md-12 mb-4">

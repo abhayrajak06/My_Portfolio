@@ -1,6 +1,6 @@
 .techstack{
     background-color: rgb(255, 255, 255);
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 /* .stack-card:hover{
@@ -24,7 +24,9 @@
 
 #dark .techstack{
     /* background-color: rgba(211, 223, 211, 0.396); */
-    filter: brightness(85%);
+    /* filter: brightness(85%); */
+    background-color: #20232B;
+    color: rgb(255, 255, 255);
 }
 
 #dark .techstack .stack-card{

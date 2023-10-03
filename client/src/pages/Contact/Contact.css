@@ -85,5 +85,16 @@ img{
   }
 
   #dark .contact-section{
-    filter: brightness(85%);
+    /* filter: brightness(85%); */
+    background-color:  rgba(112, 112, 112, 0.595);
+  }
+  #dark .contact-section img{
+    filter: grayscale(40%);
+  }
+  #dark .contact-card{
+    background-color:  rgb(166, 153, 153);
+  }
+
+  #dark ::placeholder {
+    color: #736c6c;
   }
