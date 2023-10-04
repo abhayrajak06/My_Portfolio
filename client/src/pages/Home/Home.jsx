@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
-import Resume from "../../components/assets/docs/gk-2500.pdf";
+import Resume from "../../components/assets/docs/abhay.pdf";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { useTheme } from "../../context/ThemeContext";
 import Fade from "react-reveal/Fade";

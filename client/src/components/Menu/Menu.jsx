@@ -19,10 +19,7 @@ const Menu = () => {
       <div>
         <Zoom>
           <div className="navbar-profile-pic">
-            <img
-              src="https://wide-eyed-fly-jersey.cyclic.app/images/avatar.jpg"
-              alt="profile picture"
-            />
+            <img src="./avatar.jpg" alt="profile picture" />
           </div>
         </Zoom>
         <Fade left>
