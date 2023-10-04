@@ -1,16 +1,45 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { BsLinkedin, BsGithub, BsFacebook } from "react-icons/bs";
 import { useTheme } from "../../context/ThemeContext";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [theme] = useTheme();
+  const [username, setUsername] = useState("");
+  const [useremail, setUseremail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const serviceId = import.meta.env.VITE_REACT_APP_YOUR_SERVICE_ID;
+  const templateId = import.meta.env.VITE_REACT_APP_YOUR_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_REACT_APP_YOUR_PUBLIC_KEY;
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      (result) => {
+        setUsername("");
+        setUseremail("");
+        setMessage("");
+        toast.success("Your message was sent successfully");
+      },
+      (error) => {
+        // console.log(error.text);
+        toast.error(error.text);
+      }
+    );
+  };
+
   return (
     <div id={theme}>
       <div className="contact">
         <div className="container mt-2" style={{ marginBottom: "8rem" }}>
           <div
-            className="row contact-section"
+            className="row contact-section mt-5"
             style={{
               borderRadius: "1rem",
               // border: "5px solid red",
@@ -39,33 +68,47 @@ const Contact = () => {
                   <h6 className="or">OR</h6>
                   <div className="line" />
                 </div>
-                <div className="row px-3">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Enter your Name"
-                    className="mb-3"
-                  />
-                </div>
-                <div className="row px-3">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter Your Email Address"
-                    className="mb-3"
-                  />
-                </div>
-                <div className="row px-3">
-                  <textarea
-                    type="text"
-                    name="msg"
-                    placeholder="Write your message"
-                    className="mb-3"
-                  />
-                </div>
-                <div className="row px-3">
-                  <button className="button">SEND MESSAGE</button>
-                </div>
+
+                <form ref={form} onSubmit={sendEmail}>
+                  <div className="row px-3">
+                    <input
+                      type="text"
+                      name="user_name"
+                      onChange={(e) => setUsername(e.target.value)}
+                      value={username}
+                      placeholder="Enter your Name"
+                      className="mb-3"
+                      required
+                    />
+                  </div>
+                  <div className="row px-3">
+                    <input
+                      type="email"
+                      name="user_email"
+                      onChange={(e) => setUseremail(e.target.value)}
+                      value={useremail}
+                      placeholder="Enter Your Email Address"
+                      className="mb-3"
+                      required
+                    />
+                  </div>
+                  <div className="row px-3">
+                    <textarea
+                      type="text"
+                      name="message"
+                      onChange={(e) => setMessage(e.target.value)}
+                      value={message}
+                      placeholder="Write your message"
+                      className="mb-3"
+                      required
+                    />
+                  </div>
+                  <div className="row px-3">
+                    <button className="button" type="submit" value="Send">
+                      SEND MESSAGE
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
