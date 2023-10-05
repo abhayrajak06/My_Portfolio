@@ -18,10 +18,7 @@ const About = () => {
               }}
             >
               <div className="col-md-6 about-pic">
-                <img
-                  src="https://kalingatv.com/wp-content/uploads/2017/04/Virat-Kohli-RCB.jpg"
-                  alt="profile picture"
-                />
+                <img src="./avatar.jpg" alt="profile picture" />
               </div>
               <div className="col-md-6 mt-2 about-content">
                 <h1 className="text-center">About Me</h1>

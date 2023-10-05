@@ -9,7 +9,6 @@ import {
   SiMongodb,
   SiMysql,
   SiGithub,
-  SiFirebase,
   SiExpress,
 } from "react-icons/si";
 export const TechstackList = [
@@ -75,11 +74,6 @@ export const TechstackList = [
   },
   {
     _id: 13,
-    name: "Firebase ",
-    icon: SiFirebase,
-  },
-  {
-    _id: 14,
     name: "Git / Github ",
     icon: SiGithub,
   },
