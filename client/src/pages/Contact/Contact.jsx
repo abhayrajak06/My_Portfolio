@@ -11,27 +11,34 @@ const Contact = () => {
   const [useremail, setUseremail] = useState("");
   const [message, setMessage] = useState("");
 
-  const serviceId = import.meta.env.VITE_REACT_APP_YOUR_SERVICE_ID;
-  const templateId = import.meta.env.VITE_REACT_APP_YOUR_TEMPLATE_ID;
-  const publicKey = import.meta.env.VITE_REACT_APP_YOUR_PUBLIC_KEY;
+  // const serviceId = import.meta.env.VITE_REACT_APP_YOUR_SERVICE_ID;
+  // const templateId = import.meta.env.VITE_REACT_APP_YOUR_TEMPLATE_ID;
+  // const publicKey = import.meta.env.VITE_REACT_APP_YOUR_PUBLIC_KEY;
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
-      (result) => {
-        setUsername("");
-        setUseremail("");
-        setMessage("");
-        toast.success("Your message was sent successfully");
-      },
-      (error) => {
-        // console.log(error.text);
-        toast.error(error.text);
-      }
-    );
+    emailjs
+      .sendForm(
+        "service_dqf5qel",
+        "template_47rj40p",
+        form.current,
+        "cVS65uSZeidHxtO4H"
+      )
+      .then(
+        (result) => {
+          setUsername("");
+          setUseremail("");
+          setMessage("");
+          toast.success("Your message was sent successfully");
+        },
+        (error) => {
+          // console.log(error.text);
+          toast.error(error.text);
+        }
+      );
   };
 
   return (

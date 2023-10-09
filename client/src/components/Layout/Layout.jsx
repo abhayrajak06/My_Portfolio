@@ -7,7 +7,6 @@ import Projects from "../../pages/Projects/Projects";
 import Education from "../../pages/Education/Education";
 import WorkExp from "../../pages/WorkExp/WorkExp";
 import Contact from "../../pages/Contact/Contact";
-import Jello from "react-reveal/Jello";
 import Footer from "../../pages/Footer/Footer";
 
 const Layout = () => {
